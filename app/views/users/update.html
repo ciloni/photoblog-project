@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <form method="post" action={% print(url_for('users_routes.update')+user.user_account) %}>
+            <p>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" placeholder={% print(user.user_first_name) %} value={% print(user.user_first_name) %}>
+                </input>
+            </p>
+
+            <p>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder={% print(user.user_last_name) %} value={% print(user.user_last_name) %}>
+                </input>
+            </p>
+
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+</body>
+</html>
